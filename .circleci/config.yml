@@ -33,6 +33,7 @@ jobs:
       - run:
           name: create packed workflows
           command: |
+            export PATH=./node_modules/.bin/:$PATH
             ./build-release.sh
       - persist_to_workspace:
           root: "."
