@@ -24,7 +24,7 @@ jobs:
       - run: npm test
   pack:
     docker:
-      - image: circleci/python:2.7
+      - image: circleci/node:8.9-browsers
     steps:
       - checkout
       - *restore_npm_cache
